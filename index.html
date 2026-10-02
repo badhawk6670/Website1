@@ -59,6 +59,9 @@
   ]
 }
 </script>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -87,6 +90,9 @@
   .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; }
   .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; font-size: 1.2rem; letter-spacing: 0.01em; }
   .brand svg { flex: none; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .brand-top { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #a9bddc; margin-bottom: 3px; }
+  .brand-main { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.005em; }
   .nav { display: flex; gap: 20px; flex-wrap: wrap; }
   .nav a { color: #d6e0f0; text-decoration: none; font-size: 0.95rem; font-weight: 600; }
   .nav a:hover { color: #fff; text-decoration: underline; }
@@ -171,14 +177,24 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="#top">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.4"/></svg>
-      Check Your Locksmith
+    <a class="brand" href="#top" aria-label="Check Your Locksmith - home">
+      <svg class="brand-mark" width="38" height="38" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 3 34 8v11c0 9-6 15-14 18C12 34 6 28 6 19V8z" fill="#1f6feb"/>
+        <path d="M20 3 34 8v11c0 9-6 15-14 18" fill="#1a5fd0"/>
+        <circle cx="20" cy="15.5" r="4.2" fill="#fff"/>
+        <path d="M18.1 18.5 16.9 26.5h6.2l-1.2-8z" fill="#fff"/>
+        <circle cx="31" cy="30.5" r="7" fill="#2ea043" stroke="#13294b" stroke-width="2"/>
+        <path d="m27.6 30.6 2.3 2.3 4.4-4.6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-top">Check Your</span>
+        <span class="brand-main">Locksmith</span>
+      </span>
     </a>
     <nav class="nav" aria-label="Main">
       <a href="#locked-out">Locked out?</a>
       <a href="#warning-signs">Warning signs</a>
-      <a href="#reviews">Reviews</a>
+      <a href="#reviews">Locksmith reviews</a>
       <a href="#faq">FAQs</a>
       <a href="#get-help">Get help</a>
     </nav>
